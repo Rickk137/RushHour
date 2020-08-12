@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Help = ({}) => {
+const Help = () => {
   return (
     <div>
       <p>Select a car and move it with arrow keys.</p>
