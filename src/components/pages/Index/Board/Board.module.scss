@@ -1,0 +1,36 @@
+.boardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boardWrapper {
+  border: 1px solid #eaeaea;
+  padding: 5px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: repeat(6, 70px);
+  grid-template-columns: repeat(6, 70px) 20px;
+  grid-gap: 5px;
+}
+
+.exit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 10px solid #ffc107;
+  border-bottom: 10px solid #ffc107;
+}
+.exitText {
+  transform: rotate(90deg);
+  user-select: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .boardWrapper {
+    grid-template-rows: repeat(6, 40px);
+    grid-template-columns: repeat(6, 40px) 20px;
+  }
+  .exitText {
+    font-size: 10px;
+  }
+}
