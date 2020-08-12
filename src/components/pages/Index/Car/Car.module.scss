@@ -1,0 +1,28 @@
+.car {
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.car.active {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #ed9106ee;
+    box-shadow: 0 0 0 0 #ed9106ee;
+  }
+  50% {
+    -moz-box-shadow: 0 0 0 5px #ffc107;
+    box-shadow: 0 0 0 5px #ffc107;
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 #ed9106ee;
+    box-shadow: 0 0 0 0 #ed9106ee;
+  }
+}
